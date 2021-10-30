@@ -1,0 +1,63 @@
+.carousel .carousel-inner .carousel-item {
+  position: relative;
+}
+
+.carousel .carousel-inner .carousel-item::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #bdbdbd99;
+}
+
+.carousel .carousel-inner .carousel-item img.d-block {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+.carousel .carousel-inner .carousel-item .container {
+  position: relative;
+  z-index: 5;
+}
+
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  opacity: 1;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.carousel .carousel-control-prev:hover, .carousel .carousel-control-next:hover {
+  border-color: #000;
+}
+
+.carousel .carousel-control-prev {
+  left: 15px;
+  border-top: 4px solid #00000000;
+  border-left: 4px solid #00000000;
+}
+
+.carousel .carousel-control-prev:hover {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.carousel .carousel-control-next {
+  right: 15px;
+  border-top: 4px solid #00000000;
+  border-right: 4px solid #00000000;
+}
+
+.carousel .carousel-control-next:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}

@@ -1,0 +1,24 @@
+.book .card-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.book .img-box {
+  height: 200px;
+  overflow: hidden;
+}
+
+.book .img-box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.book .img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}

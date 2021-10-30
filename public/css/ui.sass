@@ -1,0 +1,41 @@
+.login
+    background-image: url(../img/slider/1.jpg)
+.register, .login
+    position: relative
+    background-image: url(../img/slider/2.jpg)
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    height: calc( 100vh - 92px )
+    &::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+    .card
+        position: relative
+        background: #1a1a1aaf
+        box-shadow: 0 0 20px 20px #1a1a1aaf
+        animation: show .3s .5s alternate both 
+        .form-control
+            background: #4e4d4dd2
+            color: white
+            transition: .3s ease all
+            &:valid
+                box-shadow: 0 0 0 0.25rem #d9d9d977
+        .btn-light
+            transition: .3s ease all
+            &:hover
+                background: #303030
+                color: white
+                box-shadow: 0 0 0 0.25rem #d9d9d977
+                
+@keyframes show 
+    0% 
+        opacity: 0
+        transform: translateY(50px)
+    100%
+        opacity: 1
+        transform: translateY(0)
